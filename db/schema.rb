@@ -17,10 +17,10 @@ ActiveRecord::Schema.define(version: 20180827024657) do
     t.text     "description"
     t.datetime "created_at",                      null: false
     t.datetime "updated_at",                      null: false
+    t.boolean  "is_hidden",        default: true
     t.integer  "wage_upper_bound"
     t.integer  "wage_lower_bound"
     t.string   "contact_email"
-    t.boolean  "is_hidden",        default: true
   end
 
   create_table "users", force: :cascade do |t|
